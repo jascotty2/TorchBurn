@@ -3,6 +3,7 @@ package com.gmail.rcarretta.torchburn;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 
+
 class TorchBurnSchedule implements Runnable {
 	Player player;
 	

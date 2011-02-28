@@ -197,9 +197,11 @@ public class TorchBurn extends JavaPlugin {
 						TorchBurn.prevState.put(l, new TorchBurnLightLevelOwner(player, world.getHandle().j(blockX+x, blockY+y, blockZ+z)));
 					}
 					// light 'em up! 
-					if ( newIntensity > worldIntensity )
-						l.getBlock().setLightLevel(newIntensity);
-//						world.getHandle().b(EnumSkyBlock.BLOCK, blockX+x, blockY+y, blockZ+z, newIntensity);
+					if ( newIntensity > worldIntensity ) {
+//						if my pull request to bukkit gets accepted
+//						l.getBlock().setLightLevel(newIntensity);
+						world.getHandle().b(EnumSkyBlock.BLOCK, blockX+x, blockY+y, blockZ+z, newIntensity);
+					}
 					
 					blockList.add(l);
 				}	
@@ -212,8 +214,9 @@ public class TorchBurn extends JavaPlugin {
 			lightLevelOwner = prevState.get(l);
 			if ( lightLevelOwner != null ) {
 				if ( lightLevelOwner.getPlayer().equals(player)) {
-					l.getBlock().setLightLevel(20);
-//					((CraftWorld)(player.getWorld())).getHandle().b(EnumSkyBlock.BLOCK, l.getBlockX(), l.getBlockY(), l.getBlockZ(), lightLevelOwner.getLevel());
+// this is if my pull request to bukkit gets accepted
+//					l.getBlock().setLightLevel(lightLevelOwner.getLevel());
+					((CraftWorld)(player.getWorld())).getHandle().b(EnumSkyBlock.BLOCK, l.getBlockX(), l.getBlockY(), l.getBlockZ(), lightLevelOwner.getLevel());
 					prevState.remove(l);
 				}
 			}

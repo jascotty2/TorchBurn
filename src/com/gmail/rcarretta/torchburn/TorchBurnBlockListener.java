@@ -4,6 +4,7 @@ import org.bukkit.Material;
 import org.bukkit.event.block.BlockListener;
 import org.bukkit.event.block.BlockPlaceEvent;
 
+
 class TorchBurnBlockListener extends BlockListener {
 	@Override
 	public void onBlockPlace (BlockPlaceEvent event) {

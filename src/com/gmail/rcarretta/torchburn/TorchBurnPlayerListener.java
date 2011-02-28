@@ -10,6 +10,7 @@ import org.bukkit.event.player.PlayerItemHeldEvent;
 import org.bukkit.event.player.PlayerDropItemEvent;
 import org.bukkit.inventory.PlayerInventory;
 
+
 class TorchBurnPlayerListener extends PlayerListener {
 	public TorchBurnPlayerListener () { }
 	
