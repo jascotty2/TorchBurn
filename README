@@ -1,0 +1,38 @@
+TorchBurn
+
+I've thought for awhile now that it's rather silly you can place torches all day long, 
+but can't do something as simple as carry one around. This plugin adds that functionality to MineCraft.
+
+
+Features and Functionality:
+. Using a torch 'lights' the torch for one minute, during which you can carry it around as a light source.
+. To use a torch, sneak (hold shift), then right-click in the air (so as not to place it) with the torch in-hand.
+. Hitting a creature or player with the torch will set it on fire for five seconds.
+. Torches have an indicator that will 'tick down' as the torch expires.
+. By default, torches will go out when you submerge in water or lava
+. Dropping a lit torch in any way will immediately extinguish it and the torch will be lost.
+. Lit torches cannot be placed.
+
+
+Changelog:
+Version 1.3 - ? - jascotty2 (started from 1.1 src)
+fixed the sneak to use
+fixed setting entities on fire, and now for a random interval
+
+
+Version 1.2
+. Bukkit appears to have changed/deprecated some of the event hooks TorchBurn uses. v1.2 merely fixes this.
+
+Version 1.1
+. Added configuration file support
+. Burn duration is now configurable
+. Added support for infinite torch burn time
+. Light intensity is now configurable
+. Falloff of light is now configurable
+. Added support for requiring the user sneak to light a torch (configurable)
+. Added support for extinguishing a lit torch when a user is submerged (configurable)
+. Torches igniting mobs is now configurable
+. Fixed a bug that would remove the wrong torch when a torch was extinguished
+
+Version 1.0
+. First release
