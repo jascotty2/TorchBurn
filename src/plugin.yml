@@ -2,4 +2,4 @@ name: TorchBurn
 description: A Minecraft plugin to allow held torches to emit light.
 author: RCarretta, jascotty2
 main: com.gmail.rcarretta.torchburn.TorchBurn
-version: 1.3
+version: 1.0.1
